@@ -39,7 +39,6 @@ bubble.addEventListener("click", (e) => {
     e.preventDefault();
     
     bubbleSort();
-
 });
 
 // Functions
@@ -65,6 +64,11 @@ function bubbleSort(){
             }
         }
     }
+    deleteItem(visualContainer);
+
+    barTotal.forEach(item => {
+        visualContainer.appendChild(item);
+    })
 }
 
 function swap(array, a, b){
