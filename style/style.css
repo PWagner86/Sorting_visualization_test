@@ -1,1 +1,82 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #7db0e0;
+  font-family: "Roboto", sans-serif;
+}
+
+body header {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header h1 {
+  font-size: 3vmax;
+  color: white;
+  text-transform: uppercase;
+}
+
+body main {
+  height: 90vh;
+}
+
+body main .control-wrapper {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .control-wrapper label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1vmax;
+  color: white;
+  margin-right: 3rem;
+}
+
+body main .control-wrapper .bars-amount {
+  width: 20%;
+  height: 30%;
+}
+
+body main .control-wrapper .bars-enter {
+  width: 5%;
+  height: 30%;
+  margin-left: 3rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 2vmin;
+  color: white;
+  background: #5ce65c;
+  border: solid 3px #055305;
+  border-radius: 1rem;
+}
+
+body main .visual-wrapper {
+  height: 80%;
+}
+/*# sourceMappingURL=style.css.map */
