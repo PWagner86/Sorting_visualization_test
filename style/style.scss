@@ -46,7 +46,7 @@ body{
                 height: 30%;
             }
 
-            .bars-enter{
+            button{
                 width: 5%;
                 height: 30%;
                 margin-left: 3rem;
@@ -55,9 +55,18 @@ body{
                 text-transform: uppercase;
                 font-size: 2vmin;
                 color: white;
+                border-radius: 1rem;   
+            }
+
+            .bars-enter{
                 background: rgb(92, 230, 92);
                 border: solid 3px rgb(5, 83, 5);
                 border-radius: 1rem;
+            }
+
+            .bubble-btn{
+                background: rgb(214, 186, 28);
+                border: solid 3px rgb(194, 144, 6);
             }
         }
 

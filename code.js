@@ -1,5 +1,7 @@
 // Variables
 const enter = document.querySelector(".bars-enter");
+const bubble = document.querySelector(".buble-btn");
+
 const visualContainer = document.querySelector(".visual-wrapper");
 const visualWidth = visualContainer.clientWidth;
 const visualHeight = visualContainer.clientHeight;

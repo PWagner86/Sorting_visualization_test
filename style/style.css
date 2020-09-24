@@ -63,7 +63,7 @@ body main .control-wrapper .bars-amount {
   height: 30%;
 }
 
-body main .control-wrapper .bars-enter {
+body main .control-wrapper button {
   width: 5%;
   height: 30%;
   margin-left: 3rem;
@@ -72,9 +72,18 @@ body main .control-wrapper .bars-enter {
   text-transform: uppercase;
   font-size: 2vmin;
   color: white;
+  border-radius: 1rem;
+}
+
+body main .control-wrapper .bars-enter {
   background: #5ce65c;
   border: solid 3px #055305;
   border-radius: 1rem;
+}
+
+body main .control-wrapper .bubble-btn {
+  background: #d6ba1c;
+  border: solid 3px #c29006;
 }
 
 body main .visual-wrapper {
