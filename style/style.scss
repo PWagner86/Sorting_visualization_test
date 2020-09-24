@@ -9,7 +9,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
     background: rgb(125, 176, 224);
     font-family: $mainFont;
 
@@ -26,6 +26,8 @@ body{
 
     main{
         height: 90vh;
+        width: 100%;
+        position: relative;
 
         .control-wrapper{
             height: 20%;
@@ -60,7 +62,12 @@ body{
         }
 
         .visual-wrapper{
-            height: 80%;
+            height: 75%;
+            width: 90%;
+            position: absolute;
+            transform: translateX(-50%);
+            bottom: 5%;
+            left: 50%;
         }
     }
 }
