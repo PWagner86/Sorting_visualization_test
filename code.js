@@ -30,7 +30,7 @@ enter.addEventListener("click", (e) => {
         console.log(bar.clientHeight);
 
         barTotal.push(bar);
-        
+
         console.log(barTotal);
     }
 });
