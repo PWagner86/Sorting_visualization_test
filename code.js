@@ -27,9 +27,10 @@ enter.addEventListener("click", (e) => {
         bar.setAttribute("value", barVal);
         visualContainer.appendChild(bar);
 
-        console.log(bar.offsetHeight);
+        console.log(bar.clientHeight);
 
         barTotal.push(bar);
+        
         console.log(barTotal);
     }
 });
@@ -57,8 +58,8 @@ function deleteItem(container){
 function bubbleSort(){
     for(let i = 0; i < barTotal.length; i++){
         for(let j = 0; j < barTotal.length - i - 1; j++){
-            let a = barTotal[j].offsetHeight;
-            let b = barTotal[j + 1].offsetHeight;
+            let a = barTotal[j].clientHeight;
+            let b = barTotal[j + 1].clientHeight;
             if(a > b){
                 swap(barTotal, j, j + 1);
             }
