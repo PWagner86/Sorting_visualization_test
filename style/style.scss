@@ -62,12 +62,19 @@ body{
         }
 
         .visual-wrapper{
+            display: flex;
+            align-items: flex-end;
             height: 75%;
             width: 90%;
             position: absolute;
             transform: translateX(-50%);
             bottom: 5%;
             left: 50%;
+
+            .bars{
+                background: red;
+                border: solid 2px black;
+            }
         }
     }
 }
