@@ -19,6 +19,7 @@ enter.addEventListener("click", (e) => {
     barTotal.splice(0, barTotal.length);
 
     for(let i = 0; i < bars.value; i++){
+        
         let bar = document.createElement("div");
         bar.classList.add("bars");
         let barVal = createRandomNumber(visualHeight);
@@ -26,15 +27,15 @@ enter.addEventListener("click", (e) => {
         bar.style.width = (visualWidth / bars.value) + "px";
         bar.setAttribute("value", barVal);
         visualContainer.appendChild(bar);
-
+       
         console.log(bar.clientHeight);
 
         barTotal.push(bar);
 
         console.log(barTotal);
+    
     }
 });
-
 
 bubble.addEventListener("click", (e) => {
     e.preventDefault();
@@ -43,8 +44,6 @@ bubble.addEventListener("click", (e) => {
 });
 
 // Functions
-
-
 function createRandomNumber(max){
     return Math.floor(Math.random() * (Math.floor(max) + 1));
 };
@@ -55,6 +54,7 @@ function deleteItem(container){
     }
 }
 
+// Bubble Sort Algorythmus
 function bubbleSort(){
     for(let i = 0; i < barTotal.length; i++){
         for(let j = 0; j < barTotal.length - i - 1; j++){
@@ -77,4 +77,9 @@ function swap(array, a, b){
 
     array[a] = array[b];
     array[b] = temp;
+}
+
+
+function sleep(ms){
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
